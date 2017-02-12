@@ -49,6 +49,10 @@
     $investment_f = '$'.number_format($investment, 2);
     $yearly_rate_f = $interest_rate.'%';
     $future_value_f = '$'.number_format($future_value, 2);
+
+    // creating a date function
+
+    $date = date('m/d/Y');
 ?>
 <!DOCTYPE html>
 <html>
@@ -71,6 +75,11 @@
 
         <label>Future Value:</label>
         <span><?php echo $future_value_f; ?></span><br>
+        
+
     </main>
+
+   	 <p><?php echo "This calculation was done on $date "; ?></p>
+
 </body>
 </html>
